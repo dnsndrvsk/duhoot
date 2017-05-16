@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>duhoot</title>
+  <meta name="description" content="We will find you best hotel!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header" class="cf">
+    <a class="logo left" href="#">
+      <img src="img/logo.png" alt="duhoot" width="154" height="45">
+    </a>
+    
+    <a class="login right" href="">Login</a>
+    
+    <a class="search right" href="#">Search</a>
+    
+    <nav class="main-nav right">
+      <ul class="nav-list">
+        <li><a href="#">Reality</a></li>
+        <li><a href="#">Living</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Mobility</a></li>
+      </ul>
+      
+      <button class="close" type="button"></button>
+    </nav>
+    
+    <button class="burger right" type="button"></button>
+  </header>
+  
+  <!-- SEARCH SECTION -->
+  <section id="looking-for" class="center-txt">
+    <h1 class="sect-header">What are you looking for?</h1>
+    
+    <form action="GET" class="search-form">
+      <select name="conuntry" id="conuntry">
+        <option value="Dubai">Dubai</option>
+        <option value="Dubai">Norway</option>
+        <option value="Dubai">Turkey</option>
+      </select>
+      
+      <select name="reason" id="reason">
+        <option value="Education">Education</option>
+        <option value="Education">Traveling</option>
+        <option value="Education">Exploring</option>
+      </select>
+      
+      <input class="keyword" type="text" placeholder="Keyword, name, date, ...">
+      
+      <button class="search" type="submit">Search</button>
+    </form>
+  </section>
+  
+  <!-- EVENTS -->
+  <section id="events" class="center-txt">
+    <div class="top-wrap center-txt">
+      <div class="priority">
+        <a class="selected" href="#">Recommended</a>
+        <a href="#">Latest</a>
+        <a href="#">Highlights</a>
+      </div>
+
+      <div class="city-map">
+        <select name="city" id="city">
+          <option value="Dubai">Dubai</option>
+          <option value="Dubai">NY</option>
+        </select>
+
+        <a href="#" class="show-map">Show map</a>
+      </div>
+
+      <div class="filter">
+        <span>Filter:</span>
+        <a class="hotel" href="#"></a>
+        <a class="girl disabled" href="#"></a>
+        <a class="study disabled" href="#"></a>
+        <a class="music" href="#"></a>
+        <a class="bus" href="#"></a>
+      </div>
+    </div>
+    
+    <ul class="items-wrap cf">
+      <li class="item-wrap">
+        <article class="item item-thin hotel">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+            </a>
+
+            <span class="price">$2,990</span>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">2 bedroom house for rent in Dubai</h2>
+
+          <div class="stats">
+            <p class="adventage">Vision Agency</p>
+
+            <div class="rating four-stars"></div>
+
+            <span class="comments-count">(365)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin music">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel3.jpg" alt="hotel3">
+            </a>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">Beach party festival 2014</h2>
+
+          <div class="stats">
+            <p class="adventage">Long beach</p>
+
+            <div class="rating five-stars"></div>
+
+            <span class="comments-count">(1165)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin bus">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+            </a>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">Aliquam quis pulvinar purus</h2>
+
+          <div class="stats">
+            <p class="adventage">Bus Trans</p>
+
+            <div class="rating four-stars"></div>
+
+            <span class="comments-count">(365)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin hotel">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+            </a>
+
+            <span class="price">$2,990</span>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">2 bedroom house for rent in Dubai</h2>
+
+          <div class="stats">
+            <p class="adventage">Vision Agency</p>
+
+            <div class="rating four-stars"></div>
+
+            <span class="comments-count">(365)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap wide">
+        <article class="item item-wide hotel">
+          <div class="top">
+            <img src="img/hotels/hotel-rev1.jpg" alt="hotel-rev1">
+
+            <div class="about">
+              <h2 class="item-header">Vision agency</h2>
+
+              <div class="rating four-stars"></div>
+
+              <span class="comments-count">(365)</span>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <div class="review">
+            <div class="p-rating three-stars"></div>
+
+            <p class="name">Lucy-P</p>
+
+            <p class="message">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#">...read more</a></p>
+
+            <img class="image" src="img/users/user1.jpg" alt="user1">
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap wide">
+        <article class="item item-wide music">
+          <div class="top">
+            <img src="img/hotels/hotel-rev2.jpg" alt="hotel-rev2">
+
+            <div class="about">
+              <h2 class="item-header">Skybox Club</h2>
+
+              <div class="rating five-stars"></div>
+
+              <span class="comments-count">(1365)</span>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <div class="review">
+            <div class="p-rating five-stars"></div>
+
+            <p class="name">Peter145</p>
+
+            <p class="message">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#">...read more</a></p>
+
+            <img class="image" src="img/users/user2.jpg" alt="user2">
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin music">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel3.jpg" alt="hotel3">
+            </a>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">Beach party festival 2014</h2>
+
+          <div class="stats">
+            <p class="adventage">Long beach</p>
+
+            <div class="rating five-stars"></div>
+
+            <span class="comments-count">(1165)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin hotel">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+            </a>
+
+            <span class="price">$2,990</span>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">2 bedroom house for rent in Dubai</h2>
+
+          <div class="stats">
+            <p class="adventage">Vision Agency</p>
+
+            <div class="rating four-stars"></div>
+
+            <span class="comments-count">(365)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin bus">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+            </a>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">Aliquam quis pulvinar purus</h2>
+
+          <div class="stats">
+            <p class="adventage">Bus Trans</p>
+
+            <div class="rating four-stars"></div>
+
+            <span class="comments-count">(365)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin music">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel3.jpg" alt="hotel3">
+            </a>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">Beach party festival 2014</h2>
+
+          <div class="stats">
+            <p class="adventage">Long beach</p>
+
+            <div class="rating five-stars"></div>
+
+            <span class="comments-count">(1165)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap wide">
+        <article class="item item-wide music">
+          <div class="top">
+            <img src="img/hotels/hotel-rev2.jpg" alt="hotel-rev2">
+
+            <div class="about">
+              <h2 class="item-header">Skybox Club</h2>
+
+              <div class="rating five-stars"></div>
+
+              <span class="comments-count">(1365)</span>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <div class="review">
+            <div class="p-rating five-stars"></div>
+
+            <p class="name">Peter145</p>
+
+            <p class="message">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#">...read more</a></p>
+
+            <img class="image" src="img/users/user2.jpg" alt="user2">
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin hotel">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+            </a>
+
+            <span class="price">$2,990</span>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">2 bedroom house for rent in Dubai</h2>
+
+          <div class="stats">
+            <p class="adventage">Vision Agency</p>
+
+            <div class="rating four-stars"></div>
+
+            <span class="comments-count">(365)</span>
+          </div>
+        </article>
+      </li>
+      
+      <li class="item-wrap">
+        <article class="item item-thin music">
+          <div class="top" href="#">
+            <a href="#">
+              <img src="img/hotels/hotel3.jpg" alt="hotel3">
+            </a>
+
+            <div class="pop-up">
+              <a class="more" href="#">Show more</a>
+
+              <a class="p-rating zero-stars" href="#"></a>
+
+              <a class="discuss" href="#"></a>
+            </div>
+
+            <div class="relation"></div>
+          </div>
+
+          <h2 class="item-header">Beach party festival 2014</h2>
+
+          <div class="stats">
+            <p class="adventage">Long beach</p>
+
+            <div class="rating five-stars"></div>
+
+            <span class="comments-count">(1165)</span>
+          </div>
+        </article>
+      </li>
+    </ul>
+    
+    <div class="load-more" href="#">
+      <a href="#">Load more</a>
+      
+      <span> &#x2192;</span>
+    </div>
+  </section>
+  
+  <!-- OFFERS -->
+  <section id="we-offer" class="center-txt">
+    <input type="radio" id="reality" name="offers" checked>
+    <input type="radio" id="friends" name="offers">
+    <input type="radio" id="knowledge" name="offers">
+    <input type="radio" id="relax" name="offers">
+    <input type="radio" id="communication" name="offers">
+   
+    <h2 class="sect-header">What can DuHoot offer to you?</h2>
+    
+    <h3 class="sub-header">Etiam cursus ipsum quis enim faucibus</h3>
+    
+    <label for="reality"></label>
+    <label for="friends"></label>
+    <label for="knowledge"></label>
+    <label for="relax"></label>
+    <label for="communication"></label>
+    
+    <div class="offers-wrap">
+      <section class="reality">
+        <h2 class="sect-header">Reality</h2>
+        
+        <div class="offers-list cf">
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+          
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+        </div>
+      </section>
+      
+      <section class="friends">
+        <h2 class="sect-header">Friends</h2>
+        
+        <div class="offers-list cf">
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+          
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+        </div>
+      </section>
+      
+      <section class="knowledge">
+        <h2 class="sect-header">Knowledge</h2>
+        
+        <div class="offers-list cf">
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+          
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+        </div>
+      </section>
+      
+      <section class="relax">
+        <h2 class="sect-header">Relax</h2>
+        
+        <div class="offers-list cf">
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+          
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+        </div>
+      </section>
+      
+      <section class="communication">
+        <h2 class="sect-header">Communication</h2>
+        
+        <div class="offers-list cf">
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+          
+          <p class="offer">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+        </div>
+      </section>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer id="footer" class="center-txt">
+    <section class="subscribe">
+      <h2 class="sect-header">Subscribe to our newsletter</h2>
+      
+      <form class="email-form" action="POST">
+        <input class="email" type="text">
+        
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    
+    <div class="footer-bottom cf">
+      <section class="about">
+        <h2 class="sect-header">Ipsum quis</h2>
+        
+        <ul class="item-list">
+          <li class="item">
+            <a href="#">Aliquam quis</a>
+          </li>
+          
+          <li class="item">
+            <a href="#">Pulvinar purus</a>
+          </li>
+          
+          <li class="item">
+            <a href="#">Etiam cursus</a>
+          </li>
+          
+          <li class="item">
+            <a href="#">Ipsum quis</a>
+          </li>
+          
+          <li class="item">
+            <a href="#">Enim faucibus</a>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="recent-posts">
+        <h2 class="sect-header">Ipsum quis</h2>
+        
+        <ul class="item-list">
+          <li class="item">
+            <a href="#">Aliquam quis</a>
+          </li>
+          
+          <li class="item">
+            <a href="#">Pulvinar purus</a>
+          </li>
+          
+          <li class="item">
+            <a href="#">Etiam cursus</a>
+          </li>
+          
+          <li class="item">
+            <a href="#">Ipsum quis</a>
+          </li>
+          
+          <li class="item">
+            <a href="#">Enim faucibus</a>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="follow-us">
+        <h2 class="sect-header">Follow us</h2>
+        
+        <ul class="socials-list">
+          <li class="item">
+            <a class="fb" href="#"></a>
+          </li>
+          
+          <li class="item">
+            <a class="twt" href="#"></a>
+          </li>
+          
+          <li class="item">
+            <a class="gp" href="#"></a>
+          </li>
+          
+          <li class="item">
+            <a class="yt" href="#"></a>
+          </li>
+        </ul>
+        
+        <p class="copyright">Copyright © All Rights reserved</p>
+      </section>
+    </div>
+  </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
