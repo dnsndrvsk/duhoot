@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <title>duhoot</title>
   <meta name="description" content="We will find you best hotel!">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <!-- HEADER -->
@@ -29,7 +28,9 @@
         <li><a href="#">Mobility</a></li>
       </ul>
       
-      <button class="close" type="button"></button>
+      <a class="close" href="#">
+        <img src="img/close.png" alt="close">
+      </a>
     </nav>
     
     <button class="burger right" type="button"></button>
@@ -40,13 +41,13 @@
     <h1 class="sect-header">What are you looking for?</h1>
     
     <form action="GET" class="search-form">
-      <select name="conuntry" id="conuntry">
+      <select class="country" name="country" id="country">
         <option value="Dubai">Dubai</option>
         <option value="Dubai">Norway</option>
         <option value="Dubai">Turkey</option>
       </select>
       
-      <select name="reason" id="reason">
+      <select class="reason" name="reason" id="reason">
         <option value="Education">Education</option>
         <option value="Education">Traveling</option>
         <option value="Education">Exploring</option>
@@ -68,7 +69,7 @@
       </div>
 
       <div class="city-map">
-        <select name="city" id="city">
+        <select class="city" name="city" id="city">
           <option value="Dubai">Dubai</option>
           <option value="Dubai">NY</option>
         </select>
@@ -89,9 +90,9 @@
     <ul class="items-wrap cf">
       <li class="item-wrap">
         <article class="item item-thin hotel">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+              <img class="image" src="img/hotels/hotel1.jpg" alt="hotel1">
             </a>
 
             <span class="price">$2,990</span>
@@ -121,9 +122,9 @@
       
       <li class="item-wrap">
         <article class="item item-thin music">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel3.jpg" alt="hotel3">
+              <img class="image" src="img/hotels/hotel3.jpg" alt="hotel3">
             </a>
 
             <div class="pop-up">
@@ -151,9 +152,9 @@
       
       <li class="item-wrap">
         <article class="item item-thin bus">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+              <img class="image" src="img/hotels/hotel1.jpg" alt="hotel1">
             </a>
 
             <div class="pop-up">
@@ -181,9 +182,9 @@
       
       <li class="item-wrap">
         <article class="item item-thin hotel">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+              <img class="image" src="img/hotels/hotel1.jpg" alt="hotel1">
             </a>
 
             <span class="price">$2,990</span>
@@ -214,7 +215,7 @@
       <li class="item-wrap wide">
         <article class="item item-wide hotel">
           <div class="top">
-            <img src="img/hotels/hotel-rev1.jpg" alt="hotel-rev1">
+            <img class="image" src="img/hotels/hotel-rev1.jpg" alt="hotel-rev1">
 
             <div class="about">
               <h2 class="item-header">Vision agency</h2>
@@ -234,7 +235,7 @@
 
             <p class="message">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#">...read more</a></p>
 
-            <img class="image" src="img/users/user1.jpg" alt="user1">
+            <img class="avatar" src="img/users/user1.jpg" alt="user1">
           </div>
         </article>
       </li>
@@ -242,7 +243,7 @@
       <li class="item-wrap wide">
         <article class="item item-wide music">
           <div class="top">
-            <img src="img/hotels/hotel-rev2.jpg" alt="hotel-rev2">
+            <img class="image" src="img/hotels/hotel-rev2.jpg" alt="hotel-rev2">
 
             <div class="about">
               <h2 class="item-header">Skybox Club</h2>
@@ -262,16 +263,16 @@
 
             <p class="message">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#">...read more</a></p>
 
-            <img class="image" src="img/users/user2.jpg" alt="user2">
+            <img class="avatar" src="img/users/user2.jpg" alt="user2">
           </div>
         </article>
       </li>
       
       <li class="item-wrap">
         <article class="item item-thin music">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel3.jpg" alt="hotel3">
+              <img class="image" src="img/hotels/hotel3.jpg" alt="hotel3">
             </a>
 
             <div class="pop-up">
@@ -299,9 +300,9 @@
       
       <li class="item-wrap">
         <article class="item item-thin hotel">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+              <img class="image" src="img/hotels/hotel1.jpg" alt="hotel1">
             </a>
 
             <span class="price">$2,990</span>
@@ -331,9 +332,9 @@
       
       <li class="item-wrap">
         <article class="item item-thin bus">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+              <img class="image" src="img/hotels/hotel1.jpg" alt="hotel1">
             </a>
 
             <div class="pop-up">
@@ -361,9 +362,9 @@
       
       <li class="item-wrap">
         <article class="item item-thin music">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel3.jpg" alt="hotel3">
+              <img class="image" src="img/hotels/hotel3.jpg" alt="hotel3">
             </a>
 
             <div class="pop-up">
@@ -392,7 +393,7 @@
       <li class="item-wrap wide">
         <article class="item item-wide music">
           <div class="top">
-            <img src="img/hotels/hotel-rev2.jpg" alt="hotel-rev2">
+            <img class="image" src="img/hotels/hotel-rev2.jpg" alt="hotel-rev2">
 
             <div class="about">
               <h2 class="item-header">Skybox Club</h2>
@@ -412,16 +413,16 @@
 
             <p class="message">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#">...read more</a></p>
 
-            <img class="image" src="img/users/user2.jpg" alt="user2">
+            <img class="avatar" src="img/users/user2.jpg" alt="user2">
           </div>
         </article>
       </li>
       
       <li class="item-wrap">
         <article class="item item-thin hotel">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel1.jpg" alt="hotel1">
+              <img class="image" src="img/hotels/hotel1.jpg" alt="hotel1">
             </a>
 
             <span class="price">$2,990</span>
@@ -451,9 +452,9 @@
       
       <li class="item-wrap">
         <article class="item item-thin music">
-          <div class="top" href="#">
+          <div class="top">
             <a href="#">
-              <img src="img/hotels/hotel3.jpg" alt="hotel3">
+              <img class="image" src="img/hotels/hotel3.jpg" alt="hotel3">
             </a>
 
             <div class="pop-up">
@@ -480,7 +481,7 @@
       </li>
     </ul>
     
-    <div class="load-more" href="#">
+    <div class="load-more">
       <a href="#">Load more</a>
       
       <span> &#x2192;</span>
@@ -506,7 +507,7 @@
     <label for="communication"></label>
     
     <div class="offers-wrap">
-      <section class="reality">
+      <section class="reality sect">
         <h2 class="sect-header">Reality</h2>
         
         <div class="offers-list cf">
@@ -516,7 +517,7 @@
         </div>
       </section>
       
-      <section class="friends">
+      <section class="friends sect">
         <h2 class="sect-header">Friends</h2>
         
         <div class="offers-list cf">
@@ -526,7 +527,7 @@
         </div>
       </section>
       
-      <section class="knowledge">
+      <section class="knowledge sect">
         <h2 class="sect-header">Knowledge</h2>
         
         <div class="offers-list cf">
@@ -536,7 +537,7 @@
         </div>
       </section>
       
-      <section class="relax">
+      <section class="relax sect">
         <h2 class="sect-header">Relax</h2>
         
         <div class="offers-list cf">
@@ -546,7 +547,7 @@
         </div>
       </section>
       
-      <section class="communication">
+      <section class="communication sect">
         <h2 class="sect-header">Communication</h2>
         
         <div class="offers-list cf">
@@ -566,7 +567,7 @@
       <form class="email-form" action="POST">
         <input class="email" type="text">
         
-        <button type="submit">Subscribe</button>
+        <button class="btn" type="submit">Subscribe</button>
       </form>
     </section>
     
@@ -628,19 +629,19 @@
         
         <ul class="socials-list">
           <li class="item">
-            <a class="fb" href="#"></a>
+            <a class="fb link" href="#"></a>
           </li>
           
           <li class="item">
-            <a class="twt" href="#"></a>
+            <a class="twt link" href="#"></a>
           </li>
           
           <li class="item">
-            <a class="gp" href="#"></a>
+            <a class="gp link" href="#"></a>
           </li>
           
           <li class="item">
-            <a class="yt" href="#"></a>
+            <a class="yt link" href="#"></a>
           </li>
         </ul>
         

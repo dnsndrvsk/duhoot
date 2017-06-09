@@ -1,24 +1,28 @@
-window.onload = function() {
-  document.querySelector('.search-form .keyword')
-          .value = 'Keyword, name, date, ...';
+(function() {
   
-  document.querySelector('.email-form .email')
-          .value = 'your@email.com';
-}
+  window.onload = function() {
+    document.querySelector('.search-form .keyword')
+            .value = 'Keyword, name, date, ...';
 
-var nav = document.querySelector('#header .main-nav');
+    document.querySelector('.email-form .email')
+            .value = 'your@email.com';
+  }
 
-var burger = document.querySelector('#header .burger');
-burger.addEventListener('click', function(e) {
-  e.preventDefault();
+  var nav = document.querySelector('#header .main-nav');
+
+  var burger = document.querySelector('#header .burger');
+  burger.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    nav.classList.add('show');
+  });
+
+
+  var close = document.querySelector('#header .close');
+  close.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    nav.classList.remove('show');
+  });
   
-  nav.classList.add('show');
-});
-
-
-var close = document.querySelector('#header .close');
-close.addEventListener('click', function(e) {
-  e.preventDefault();
-  
-  nav.classList.remove('show');
-});
+})();

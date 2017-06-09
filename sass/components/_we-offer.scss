@@ -1,0 +1,279 @@
+#we-offer {
+  padding: 88px 0 122px;
+  background-color: lighten($grey, 35%);
+  
+  @media (max-width: $width-md) {
+    padding-bottom: 100px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .sect-header {
+    margin: 0;
+    font-size: 22px;
+    line-height: 48px;
+    font-weight: $weight-norm;
+    color: $silver;
+  }
+  
+  .sub-header {
+    margin: 0;
+    margin-bottom: 68px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: $weight-light;
+    color: lighten($silver, 30%);
+  }
+  
+  input[id="reality"]:checked ~ label[for="reality"] {
+    @include reality-hvr();
+  }
+  
+  input[id="friends"]:checked ~ label[for="friends"] {
+    @include friends-hvr();
+  }
+  
+  input[id="knowledge"]:checked ~ label[for="knowledge"] {
+    @include knowledge-hvr();
+  }
+  
+  input[id="relax"]:checked ~ label[for="relax"] {
+    @include relax-hvr();
+  }
+  
+  input[id="communication"]:checked ~ label[for="communication"] {
+    @include communication-hvr();
+  }
+  
+  input[id="reality"]:checked ~ .offers-wrap > .reality,
+  input[id="friends"]:checked ~ .offers-wrap > .friends,
+  input[id="knowledge"]:checked ~ .offers-wrap > .knowledge,
+  input[id="relax"]:checked ~ .offers-wrap > .relax,
+  input[id="communication"]:checked ~ .offers-wrap > .communication {
+    z-index: 1000;
+    opacity: 1;
+  }
+   
+  label {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 102px;
+    height: 102px;
+    margin-right: 60px;
+    margin-bottom: 36px;
+    border: 2px solid #9dacad;
+    border-radius: $radius-round;
+    cursor: pointer;
+    
+    @media (max-width: 840px) {
+      width: 82px;
+      height: 82px;
+    }
+    
+    @media (max-width: 740px) {
+      width: 62px;
+      height: 62px;
+    }
+    
+    @media (max-width: 620px) {
+      margin-right: 20px;
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-1px);
+      right: -61px;
+      display: block;
+      width: 53px;
+      height: 2px;
+      background-color: lighten($silver, 40%);
+      cursor: auto;
+      
+      @media (max-width: 620px) {
+        width: 14px;
+        right: -21px;
+      }
+    }
+    
+    &[for="communication"] {
+      margin-right: 0;
+    }
+    
+    &[for="communication"]:after {
+      display: none;
+    }
+  }
+  
+  label[for="reality"] {
+    @include reality-static();
+    transition: background 0.3s, border-color 0.3s;
+    
+    &:hover {
+      @include reality-hvr();
+    }
+  }
+  
+  label[for="friends"] {
+    @include friends-static();
+    transition: background 0.3s, border-color 0.3s;
+    
+    &:hover {
+      @include friends-hvr();
+    }
+  }
+  
+  label[for="knowledge"] {
+    @include knowledge-static();
+    transition: background 0.3s, border-color 0.3s;
+    
+    &:hover {
+      @include knowledge-hvr();
+    }
+  }
+  
+  label[for="relax"] {
+    @include relax-static();
+    transition: background 0.3s, border-color 0.3s;
+    
+    &:hover {
+      @include relax-hvr();
+    }
+  }
+  
+  label[for="communication"] {
+    @include communication-static();
+    transition: background 0.3s, border-color 0.3s;
+    
+    &:hover {
+      @include communication-hvr();
+    }
+  }
+  
+  .offers-wrap {
+    position: relative;
+    width: 750px;
+    min-height: 240px;
+    margin: 0 auto;
+    
+    @media (max-width: $width-md) {
+      width: 450px;
+      min-height: 380px;
+    }
+  }
+  
+  .sect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity .5s;
+
+    .sect-header {
+      margin: 0;
+      margin-bottom: 40px;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: $weight-norm;
+    }
+  } 
+      
+  .offers-list {
+
+    .offer {
+      position: relative;
+      float: left;
+      width: 50%;
+      margin: 0;
+      padding-left: 100px;
+      padding-right: 20px;
+      font-size: 14px;
+      line-height: 24px;
+      color: $silver;
+      text-align: left;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 62px;
+        height: 62px;
+        border-radius: $radius-round;
+      }
+
+      @media (max-width: $width-md) {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-right: 10px;
+      }
+    }
+  }
+    
+  .reality {
+    & :first-child:after {
+      @include lightning-bg();
+      background-color: $green;
+    }
+
+    & :last-child:after {
+      @include leaf-bg();
+      background-color: $green;
+    }
+  }
+
+  .friends {
+    & :first-child:after {
+      @include lightning-bg();
+      background-color: lighten($red, 20%);
+    }
+
+    & :last-child:after {
+      @include leaf-bg();
+      background-color: lighten($red, 20%);
+    }
+  }
+
+  .knowledge {
+    & :first-child:after {
+      @include lightning-bg();
+      background-color: $red;
+    }
+
+    & :last-child:after {
+      @include leaf-bg();
+      background-color: $red;
+    }
+  }
+
+  .relax {
+    & :first-child:after {
+      @include lightning-bg();
+      background-color: $orange;
+    }
+
+    & :last-child:after {
+      @include leaf-bg();
+      background-color: $orange;
+    }
+  }
+
+  .communication {
+    & :first-child:after {
+      @include lightning-bg();
+      background-color: $purple;
+    }
+
+    & :last-child:after {
+      @include leaf-bg();
+      background-color: $purple;
+    }
+  }
+}

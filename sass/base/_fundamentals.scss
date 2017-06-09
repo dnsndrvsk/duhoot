@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1280px;
+  min-width: $width-sm;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button,
+input,
+select {
+  border: none;
+  outline: none;
+}
+
+select {
+  //remove little arrows from Firefox
+  -moz-appearance: none;
+  //remove little arrows from Chrome & Safari
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+option {
+  color: $red;
+}
+
+//remove little arrows from IE
+select::-ms-expand {
+  display: none;
+}

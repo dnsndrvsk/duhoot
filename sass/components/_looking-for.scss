@@ -1,0 +1,78 @@
+#looking-for {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: url("../img/looking-for-bg.jpg") center no-repeat;
+  background-size: cover;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10;
+  }
+  
+  & > * {
+    position: relative;
+    z-index: 20;
+  }
+  
+  .sect-header {
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: $weight-norm;
+    color: #fff;
+  }
+  
+  .search-form {
+    width: 470px;
+    margin: 0 auto;
+    
+    & > *:not(.search) {
+      padding: 13px 30px;
+      border-radius: $radius-md;
+      font-size: 18px;
+      line-height: 30px;
+      color: #fff;
+    }
+    
+    .country,
+    .reason {
+      width: 45%;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.1) url(
+            data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAiklEQVQoU3XRURGDMBCE4X8lVAsa0FIJ1VAJ1VIN1YKE6yzkILk2eWFC+LJ7gwAi4ga8gKekj9/VFREL8ADukjY19AZ8sAFrxQ35Gwf44rVCBw24IJ8fsKuaqSdudTPpQq6as5TKif10vQF5c8JJct571JM8xr4GOME/6C8s2NshaZpYZqav1//bLzIrRCZ5aiJTAAAAAElFTkSuQmCC
+      ) 90% 50% no-repeat;
+    }
+    
+    .country {
+      float: left;
+    }
+    
+    .reason {
+      float: right;
+    }
+    
+    .keyword {
+      display: block;
+      width: 100%;
+      margin-bottom: 28px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .search {
+      @include subm-btn();
+      
+      padding: 5px 30px;
+      font-size: 18px;
+      line-height: 48px;
+      opacity: 1;
+    }
+  }
+}
