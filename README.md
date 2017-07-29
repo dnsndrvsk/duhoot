@@ -1,1 +1,1 @@
-# duhoot - Responsive website
+# duhoot - responsive website
